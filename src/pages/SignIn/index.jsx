@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 import {
@@ -11,7 +13,7 @@ import {
   Grid,
   Link,
   Typography,
-  TextField
+  TextField,
 } from '@material-ui/core';
 
 import { LockOutlined as LockOutlinedIcon } from '@material-ui/icons';
@@ -24,9 +26,8 @@ function Copyright() {
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
         Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
+      </Link>
+      {` ${new Date().getFullYear()}`}
     </Typography>
   );
 }
@@ -88,7 +89,7 @@ const SignIn = () => {
             </Grid>
             <Grid item>
               <Link href="#" variant="body2">
-                {"Don't have an account? Sign Up"}
+                Don't have an account? Sign Up
               </Link>
             </Grid>
           </Grid>
@@ -99,6 +100,6 @@ const SignIn = () => {
       </Box>
     </Container>
   );
-}
+};
 
 export default SignIn;
