@@ -4,9 +4,7 @@ import Routes from './routes';
 import './assets/styles/global.css';
 
 const App = () => {
-  return (
-    <Routes />
-  );
-}
+  return <Routes />;
+};
 
 export default App;
